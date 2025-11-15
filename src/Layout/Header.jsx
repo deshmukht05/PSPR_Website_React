@@ -5,7 +5,7 @@ export const Header = () => {
     <nav>
       <div class="navbar-components">
         <div class="logo">
-          <img src="/assets/Logo.png" alt="Logo" />
+          <img src="Logo.png" alt="Logo" />
         </div>
         <div class="components">
           <ul>
