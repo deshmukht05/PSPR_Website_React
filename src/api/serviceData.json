@@ -1,37 +1,37 @@
 [
     {
         "id" : 1, 
-        "image" : "/assets/chart.png",
+        "image" : "chart.png",
         "heading" : "Election Forecasting",
         "paragraph" : "Advanced predictive modeling and analytics to forecast election outcomes with high accuracy"
     },
     {
         "id" : 2, 
-        "image" : "/assets/group.png",
+        "image" : "group.png",
         "heading" : "Voter Segmentation",
         "paragraph" : "Detailed demographic and psychographic analysis to understand voter behavior and preferences"
     },
     {
         "id" : 3, 
-        "image" : "/assets/trend.png",
+        "image" : "trend.png",
         "heading" : "Campaign Strategy Development",
         "paragraph" : "Comprehensive strategic planning for effective campaign messaging and resource allocation"
     },
     {
         "id" : 4, 
-        "image" : "/assets/search.png",
+        "image" : "search.png",
         "heading" : "Polling and Surveys",
         "paragraph" : "Professional opinion polling and survey research with rigorous methodological standards"
     },
     {
         "id" : 5, 
-        "image" : "/assets/file.png",
+        "image" : "file.png",
         "heading" : "Opposition Research",
         "paragraph" : "Thorough analysis of political opponents to identify strengths, weaknesses, and opportunities"
     },
     {
         "id" : 6, 
-        "image" : "/assets/check-circle.png",
+        "image" : "check-circle.png",
         "heading" : "Post-Election Analysis",
         "paragraph" : "In-depth evaluation of election results to inform future strategy and policy decisions"
     }

@@ -1,25 +1,25 @@
 [
     {
         "id" : 1,
-        "image" : "/assets/target.png",
+        "image" : "target.png",
         "heading" : "Integrity",
         "paragraph" : "Maintaining the highest ethical standards in all our political engagements"
     },
     {
         "id" : 2,
-        "image" : "/assets/growth.png",
+        "image" : "growth.png",
         "heading" : "Innovation",
         "paragraph" : "Pioneering cutting-edge research methodologies and analytical tools"
     },
     {
         "id" : 3,
-        "image" : "/assets/group.png",
+        "image" : "group.png",
         "heading" : "Data Accuracy",
         "paragraph" : "Delivering precise, reliable insights through rigorous research"
     },
     {
         "id" : 4,
-        "image" : "/assets/medal.png",
+        "image" : "medal.png",
         "heading" : "Ethical Engagement",
         "paragraph" : "Committed to responsible and transparent political consulting"
     }
