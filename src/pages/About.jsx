@@ -14,7 +14,7 @@ export const About = () => {
         <div className="about-box-content">
           <div className="about-projects-done">
             <div>
-              <img src="src/assets/stars.png" alt="Icon" />
+              <img src="/assets/stars.png" alt="Icon" />
             </div>
             <div>
               <h1>10+</h1>
@@ -23,7 +23,7 @@ export const About = () => {
           </div>
           <div className="about-projects-done">
             <div>
-              <img src="src/assets/competition.png" alt="Icon" />
+              <img src="/assets/competition.png" alt="Icon" />
             </div>
             <div>
               <h1>8+</h1>
