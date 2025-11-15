@@ -1,0 +1,136 @@
+.about {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-heading h1 {
+  font-size: 3rem;
+  color: #1d1f20;
+  font-weight: 700;
+}
+
+.about-heading p {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  margin: 2rem 10rem;
+  gap: 1.8rem;
+}
+
+.about-para-content {
+  padding: 2.5rem 2rem;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-radius: 1rem;
+}
+
+.about-para-content p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1d1f20;
+}
+
+.about-box-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.8rem;
+  border-radius: 1rem;
+}
+
+.about-projects-done {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.4rem 3rem;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9e9e9;
+  border-radius: 1rem;
+  color: #1d1f20;
+}
+
+.about-projects-done img {
+  width: 5rem;
+  height: auto;
+}
+
+/* Core Values Section */
+.core-values {
+  margin-top: 2rem;
+}
+
+.core-heading h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1d1f20;
+}
+
+.about-align {
+  padding: 2rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.inner-core-values {
+  list-style-type: none;
+}
+
+/* Integrity */
+.integrity {
+  display: flex;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #e9e9e9;
+  color: #1d1f20;
+}
+
+.integrity:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+}
+
+.integrity-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.integrity-content h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.integrity-img img {
+  width: 3rem;
+  height: auto;
+}

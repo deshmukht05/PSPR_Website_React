@@ -1,0 +1,42 @@
+[
+    {
+        "id" : 1,
+        "heading" : "Tamil Nadu Elections",
+        "location" : "Tamil Nadu, India",
+        "year" : "2021",
+        "objective" : "Voter modeling and targeted outreach strategy",
+        "methodology" : "Advanced data analytics, demographic segmentation, and digital outreach",
+        "outcome" : "15% increase in voter turnout in target constituencies",
+        "results" : "Successfully helped secure legislative gains through data-driven voter engagement"
+    },
+    {
+        "id" : 2,
+        "heading" : "Punjab Elections",
+        "location" : "Punjab, India",
+        "year" : "2022",
+        "objective" : "Opposition research and comprehensive strategy development",
+        "methodology" : "Policy analysis, sentiment tracking, and grassroots campaign coordination",
+        "outcome" : "Identified key voter concerns leading to strategic policy positioning",
+        "results" : "Contributed to significant electoral gains in rural and urban districts"
+    },
+    {
+        "id" : 3,
+        "heading" : "Karnataka Elections",
+        "location" : "Karnataka, India",
+        "year" : "2023",
+        "objective" : "Demographic analysis and policy platform development",
+        "methodology" : "Comprehensive voter surveys, focus groups, and statistical modeling",
+        "outcome" : "Delivered actionable insights on critical issues affecting swing voters",
+        "results" : "Aided in formulating winning policy platforms and campaign messaging"
+    },
+    {
+        "id" : 4,
+        "heading" : "Maharashtra Elections",
+        "location" : "Maharashtra, India",
+        "year" : "2019",
+        "objective" : "Predictive polling and outcome forecasting",
+        "methodology" : "Advanced statistical models, real-time polling, and trend analysis",
+        "outcome" : "Achieved 92% accuracy in pre-election forecasts",
+        "results" : "Provided strategic guidance that informed campaign resource allocation"
+    }
+]

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background-color: #a6ce38;
+}
+
+/* .underline {
+  width: 6rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #a6ce38, #2e8b57, #1e6b8f) border-box;
+  border: 0.2rem solid transparent;
+} */

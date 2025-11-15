@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "position": "Co-Founder",
+        "name" : "Deep Dauji",
+        "info" : "Deep Dauji, co-founder of PSPR, brings extensive expertise in research methodologies and data analytics. Her innovative approach to voter behavior analysis has been instrumental in shaping PSPR's unique consulting framework.",
+        "years" : "7+ years in political research"
+    },
+    {
+        "id" : 2,
+        "position": "Legal Consultant",
+        "name" : "Anil Pathak",
+        "info" : "Anil Pathak serves as Legal Consultant, ensuring all operations maintain the highest ethical standards and legal compliance. His deep understanding of electoral law and regulations provides crucial guidance for PSPR's consulting practices.",
+        "years" : "10+ years in legal consulting"
+    },
+    {
+        "id" : 3,
+        "position": "Chief Operating Officer",
+        "name" : "Sandesh Gaikwad",
+        "info" : "Sandesh Gaikwad, chief operating officer of PSPR, brings extensive expertise in research methodologies and data analytics. His innovative approach to voter behavior analysis has been instrumental in shaping PSPR's unique consulting framework.",
+        "years" : "8+ years in political research"
+    }
+]

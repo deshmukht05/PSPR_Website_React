@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "heading" : "West Bengal Elections",
+        "location" : "West Bengal, India",
+        "year" : "2026",
+        "scope" : "State-level comprehensive strategy",
+        "rule" : "Voter database building and campaign optimization",
+        "expected" : "Real-time sentiment tracking, demographic profiling, and strategic advisory",
+        "note" : "Project details are subject to confidentiality agreements and ethical consulting practices."
+    },
+    {
+        "id" : 2,
+        "heading" : "Assam Elections",
+        "location" : "Assam, India",
+        "year" : "2026",
+        "scope" : "Regional electoral analysis",
+        "rule" : "Real-time sentiment analysis and grassroots mobilization",
+        "expected" : "Polling data, voter engagement strategies, and campaign coordination",
+        "note" : "Project details are subject to confidentiality agreements and ethical consulting practices."
+    },
+    {
+        "id" : 3,
+        "heading" : "Kerala Elections",
+        "location" : "Kerala, India",
+        "year" : "2026",
+        "scope" : "State-wide strategic consulting",
+        "rule" : "Opposition strategy and risk assessment",
+        "expected" : "Comprehensive research reports, AI-based voter prediction models, and advisory services",
+        "note" : "Project details are subject to confidentiality agreements and ethical consulting practices."
+    }
+]

@@ -1,0 +1,159 @@
+.team {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-heading h1 {
+  font-size: 3rem;
+  color: #1d1f20;
+  font-weight: 700;
+}
+
+.team-heading p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Team Details */
+.team-m-1 {
+  margin: 2rem 10rem;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #f8fbf0;
+}
+
+.team-d {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.team-po {
+  background-color: #f5f9ec;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  width: fit-content;
+}
+
+.team-po p {
+  font-size: 0.9rem;
+  color: #a6ce38;
+  font-weight: 500;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.team-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.team-info p {
+  color: #444;
+  font-size: 1rem;
+}
+
+.team-info .team-y {
+  font-weight: 500;
+  color: #a6ce38;
+  font-size: 1rem;
+}
+
+.team-quote {
+  padding: 1.5rem 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  height: 100%;
+  border-left: 0.4rem solid #a6ce38;
+}
+
+.team-quote p {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Other Team Members Details */
+.team-r-d {
+  margin: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-po-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.4rem;
+  align-items: center;
+}
+
+.team-d-i {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.team-d-po {
+  background-color: #f5f9ec;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  width: fit-content;
+}
+
+.team-d-po p {
+  font-size: 0.9rem;
+  color: #a6ce38;
+  font-weight: 500;
+}
+
+.team-b-i {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.team-b-i h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.team-b-i p {
+  color: #444;
+}
+
+.team-info-d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.team-b-i .team-y {
+  font-weight: 500;
+  color: #a6ce38;
+  font-size: 1rem;
+}

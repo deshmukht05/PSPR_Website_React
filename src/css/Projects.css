@@ -1,0 +1,153 @@
+.projects {
+  margin-top: 5rem;
+  padding: 5rem 0;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.project-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-heading h1 {
+  font-size: 3rem;
+  color: #1d1f20;
+  font-weight: 700;
+}
+
+.project-heading p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Completed Projects */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #1d1f20;
+}
+
+.project-content h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-details {
+  max-width: 50rem;
+  list-style-type: none;
+  height: 100%;
+  padding: 0;
+}
+
+.project-info {
+  padding: 2.5rem 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  height: 100%;
+  border-left: 0.4rem solid #a6ce38;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.slider-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
+/* Completed Project Content Alignment */
+.p-heading .p-h{
+    font-size: 1.6rem;
+    color: #1d1f20;
+    font-weight: 600;
+    text-align: left;
+}
+
+.p-heading .p-y {
+    font-size: 1rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.p-heading .p-y .p-l {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .2rem;
+}
+
+.p-col-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.p-col-1 .p-o h1{
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #a6ce38;
+}
+
+.p-col-1 .p-o p{
+    color: #1d1f20;
+}
+
+.p-col-1 .p-m h1{
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #a6ce38;
+}
+
+.p-col-1 .p-m p{
+    color: #1d1f20;
+}
+
+.p-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.p-col-2 .p-ot h1{
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #a6ce38;
+}
+
+.p-col-2 .p-ot p{
+    color: #1d1f20;
+}
+
+.p-col-2 .p-r h1{
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #a6ce38;
+}
+
+.p-col-2 .p-r p{
+    color: #1d1f20;
+}
+
+.project-info .p-n {
+    font-size: 0.9rem;
+    font-style: italic;
+}
