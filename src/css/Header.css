@@ -23,8 +23,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white; /* Added background color *
-  z-index: 1000; /* Ensure it stays above other content */
+  background: white; /* Added background color */
+  z-index: 10000; 
 }
 
 .navbar-components {
