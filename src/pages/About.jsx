@@ -88,6 +88,7 @@ export const About = () => {
         >
           <h1>Our Core Values</h1>
         </motion.div>
+        
         <ul className="about-align">
           {aboutData.map((curEle) => (
             <AboutData key={aboutData.id} data={curEle} />
