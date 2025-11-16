@@ -27,7 +27,7 @@ export const About = () => {
             </div>
             <div>
               <h1>8+</h1>
-            <p>Years of Excellence</p>
+              <p>Years of Excellence</p>
             </div>
           </div>
         </div>

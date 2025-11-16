@@ -1,18 +1,16 @@
 .home-content {
-  margin-top: 8rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: 
-    linear-gradient(
-      rgba(255, 255, 255, 0.8), 
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url('../assets/world-map.png') center center/contain no-repeat;
+    url("../assets/world-map.png") center center/contain no-repeat;
   padding: 2rem 2rem;
-  min-height: 60vh;
+  /* min-height: 60vh; */
 }
-
 
 .small-headline p {
   background: linear-gradient(white, white) padding-box,
@@ -57,13 +55,13 @@
   text-decoration: none;
   padding: 1rem 2rem;
   width: auto;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   border: none;
   font-weight: 500;
   background-color: #a6ce38;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .explore-button button a {
@@ -73,5 +71,30 @@
 }
 
 .explore-button button:hover {
-  background-color: #8bae2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(166, 206, 56, 0.3);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Large Tablets (1024px and below) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-content {
+    margin-top: 4rem;
+  }
+
+  .small-headline {
+    font-size: 0.6rem;
+    border-radius: 10rem;
+    padding: 0.3rem 1.8rem;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .heading p{
+    /* margin-top: -1rem; */
+    font-size: 0.8rem;
+  }
 }

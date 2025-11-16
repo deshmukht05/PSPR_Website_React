@@ -8,8 +8,6 @@ export const Home = () => {
       </div>
       <div className="heading">
         <h1>
-          {/* Customer <br />
-          relationship magic. */}
           Shaping Political Futures Through <br /> <span>Strategic Research</span> and Insight
         </h1>
         <p>

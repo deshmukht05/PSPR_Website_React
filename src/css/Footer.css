@@ -9,6 +9,12 @@
 .f-i img {
     width: 8.5rem;
     height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.f-i img:hover {
+    transform: scale(1.05);
 }
 
 .f-a {

@@ -5,33 +5,33 @@
 }
 
 body {
-  padding-top: 100px; /* Add padding to prevent content from being hidden behind fixed nav */
+  padding-top: 100px;
 }
 
 nav {
   padding: 1rem 5rem;
   border-radius: 1rem;
-  /* box-shadow: 0 2px 30px 2px rgba(21, 21, 21, 0.05); */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   position: fixed;
-  top: 1rem; /* Added top positioning */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Perfect centering */
-  width: 90%; /* Responsive width */
-  max-width: 1200px; /* Maximum width */
-  overflow: hidden;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  overflow: visible; /* Changed from hidden */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white; /* Added background color */
-  z-index: 10000; 
+  background: white;
+  z-index: 10000;
+  transition: all 0.3s ease;
 }
 
 .navbar-components {
   display: flex;
   gap: 3rem;
   align-items: center;
-  width: 100%; /* Take full width */
+  width: 100%;
 }
 
 .logo {
@@ -50,15 +50,36 @@ nav {
   font-weight: 500;
   font-size: 1.1rem;
   transition: color 0.2s ease-in-out;
+  position: relative;
 }
 
 .components ul li a:hover {
   color: #9cc234;
 }
 
+.components ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a6ce38;
+  transition: width 0.3s ease;
+}
+
+.components ul li a:hover::after {
+  width: 100%;
+}
+
 .navbar-components .logo img {
   width: 10rem;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-components .logo img:hover {
+  transform: scale(1.05);
 }
 
 .navbar-button button {
@@ -68,63 +89,47 @@ nav {
   border: none;
   background-color: #a6ce38;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar-button button a{
+.navbar-button button a {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
+  background-color: #a6ce38;
+  border-radius: .5rem;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-button button:hover {
   background-color: #8bae2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(166, 206, 56, 0.3);
 }
 
-/* Dropdown Styles */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
+/* Mobile Menu Toggle */
+.mobile-toggle {
   display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 14rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  z-index: 100;
-  top: 100%;
-  left: 0;
-  overflow: hidden;
+  background: none;
+  border: none;
+  font-size: 1.8rem; /* Increased size */
+  color: #444;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+  z-index: 10001; /* Higher than nav */
+  margin-left: auto; /* Push to right */
 }
 
-.dropdown-content a {
-  color: #2c3e50;
-  padding: 12px 16px;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-.dropdown-content a:hover {
-  background-color: #f8f9fa;
-  color: #9cc234;
-}
-
-.dropdown-content a:last-child {
-  border-bottom: none;
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  animation: fadeIn 0.3s ease;
-}
-
-.dropdown > a::after {
-  content: " ▼";
-  font-size: 0.8em;
-  margin-left: 5px;
+.mobile-toggle:hover {
+  color: #a6ce38;
 }
 
 /* Animation */
@@ -137,4 +142,244 @@ nav {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Large Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+
+  .navbar-components {
+    gap: 2rem;
+  }
+
+  .components ul {
+    gap: 2rem;
+  }
+
+  .components ul li a {
+    font-size: 1rem;
+  }
+
+  .navbar-components .logo img {
+    width: 8rem;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+
+  nav {
+    padding: 0.8rem 2rem;
+    top: 0.5rem;
+    width: 95%;
+    border-radius: 0.8rem;
+  }
+
+  .navbar-components {
+    gap: 1.5rem;
+  }
+
+  .components ul {
+    gap: 1.5rem;
+  }
+
+  .components ul li a {
+    font-size: 0.95rem;
+  }
+
+  .navbar-components .logo img {
+    width: 7rem;
+  }
+
+  .navbar-button button {
+    width: 8rem;
+    height: 2.8rem;
+    font-size: 0.9rem;
+  }
+
+  .mobile-nav-button button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #a6ce38;
+  }
+}
+
+/* Small Tablets and Large Mobile (650px and below) */
+@media (max-width: 650px) {
+  .mobile-toggle {
+    display: block; /* Show toggle button */
+    order: 2; /* Ensure it's on the right */
+  }
+
+  .navbar-components {
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .components {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    margin-top: 1rem;
+  }
+
+  .components.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .components ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .components ul li a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+  }
+
+  .components ul li:last-child a {
+    border-bottom: none;
+  }
+
+  .components ul li a:hover {
+    color: #a6ce38;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+
+  .components ul li a::after {
+    display: none;
+  }
+
+  .navbar-button {
+    display: none;
+  }
+
+  .mobile-nav-button {
+    display: block !important;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .mobile-nav-button button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #a6ce38;
+    border: none;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 80px;
+  }
+
+  nav {
+    padding: 0.6rem 1.5rem;
+    width: 97%;
+  }
+
+  .navbar-components .logo img {
+    width: 6rem;
+  }
+
+  .mobile-toggle {
+    font-size: 1.5rem;
+  }
+
+  .components {
+    padding: 1.5rem;
+  }
+
+  .components ul li a {
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+  }
+
+  .mobile-nav-button button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #a6ce38;
+  }
+}
+
+/* Small Mobile Devices (360px and below) */
+@media (max-width: 360px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-components .logo img {
+    width: 5rem;
+  }
+
+  .components {
+    padding: 1rem;
+  }
+
+  .components ul li a {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+}
+
+/* Mobile Button for Small Screens */
+.mobile-nav-button {
+  display: none;
+}
+
+.mobile-nav-button button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #a6ce38;
+  }
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Backdrop for mobile menu */
+.mobile-menu-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.mobile-menu-backdrop.active {
+  display: block;
 }
