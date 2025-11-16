@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="contact-heading">
-        <h1>Get In Touch</h1>
+        <h1>Get In <span>Touch</span></h1>
         <span className="underline"></span>
         <p>Ready to transform your political strategy? Contact us today.</p>
       </div>

@@ -47,7 +47,7 @@ export const Projects = () => {
   return (
     <div className="projects" id="projects">
       <div className="project-heading">
-        <h1>Our Projects</h1>
+        <h1>Our <span>Projects</span></h1>
         <span className="underline"></span>
         <p>
           Track record of successful election campaigns and upcoming strategic

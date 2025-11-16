@@ -6,7 +6,7 @@ export const Services = () => {
   return (
     <div className="service" id="services">
       <div className="service-heading">
-        <h1>Our Services</h1>
+        <h1>Our <span>Services</span></h1>
         <span className="underline"></span>
         <p>
           Comprehensive political consulting services tailored to your electoral

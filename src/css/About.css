@@ -16,9 +16,14 @@
 }
 
 .about-heading h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   font-size: 3rem;
   color: #1d1f20;
   font-weight: 700;
+}
+
+.about-heading h1 span {
+  color: #a6ce36;
 }
 
 .about-heading p {

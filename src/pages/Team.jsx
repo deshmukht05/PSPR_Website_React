@@ -6,7 +6,7 @@ export const OurTeam = () => {
   return (
     <div className="team" id="team">
       <div className="team-heading">
-        <h1>Our Team</h1>
+        <h1>Our <span>Team</span></h1>
         <span className="underline"></span>
         <p>Meet the visionary leaders driving PSPR's mission and success</p>
       </div>
