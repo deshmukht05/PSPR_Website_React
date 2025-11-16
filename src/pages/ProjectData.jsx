@@ -1,12 +1,21 @@
 import { IconContext } from "react-icons";
 import { MdOutlineDateRange, MdOutlineLocationOn } from "react-icons/md";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export const ProjectData = ({ data }) => {
   const { heading, location, year, objective, methodology, outcome, results } =
     data;
+  const { scrollRef } = useRef(null);
 
   return (
-    <li className="project-info">
+    <motion.li
+      className="project-info"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ root: scrollRef }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="p-heading">
         <h1 className="p-h">{heading}</h1>
         <p className="p-y">
@@ -46,6 +55,6 @@ export const ProjectData = ({ data }) => {
           <p>{results}</p>
         </div>
       </div>
-    </li>
+    </motion.li>
   );
 };

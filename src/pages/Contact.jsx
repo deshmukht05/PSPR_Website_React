@@ -1,16 +1,34 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import "../css/Contact.css";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export const Contact = () => {
+  const { scrollRef } = useRef(null);
+
   return (
     <div className="contact" id="contact">
-      <div className="contact-heading">
-        <h1>Get In <span>Touch</span></h1>
+      <motion.div
+        className="contact-heading"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ root: scrollRef }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1>
+          Get In <span>Touch</span>
+        </h1>
         <span className="underline"></span>
         <p>Ready to transform your political strategy? Contact us today.</p>
-      </div>
+      </motion.div>
 
-      <div className="contact-info">
+      <motion.div
+        className="contact-info"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ root: scrollRef }}
+        transition={{ duration: 0.8 }}
+      >
         <h1>Contact Information</h1>
 
         <hr />
@@ -49,7 +67,7 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

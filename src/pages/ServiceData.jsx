@@ -1,8 +1,18 @@
+import { motion } from "framer-motion";
+import { useRef } from "react";
+
 export const ServiceData = ({ serviceData }) => {
   const { image, heading, paragraph } = serviceData;
+  const {scrollRef} = useRef(null);
 
   return (
-    <li className="services-types">
+    <motion.li
+      className="services-types"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ root: scrollRef }}
+      transition={{ duration: 0.8 }}
+    >
       <div>
         <div className="service-box">
           <div className="service-img">
@@ -14,6 +24,6 @@ export const ServiceData = ({ serviceData }) => {
           </div>
         </div>
       </div>
-    </li>
+    </motion.li>
   );
 };

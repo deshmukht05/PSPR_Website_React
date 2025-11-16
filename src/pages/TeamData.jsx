@@ -1,8 +1,18 @@
+import { motion } from "framer-motion";
+import { useRef } from "react";
+
 export const TeamData = ({ data }) => {
   const { position, name, info, years } = data;
+  const { scrollRef } = useRef(null);
 
   return (
-    <div className="team-d-i">
+    <motion.div
+      className="team-d-i"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ root: scrollRef }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="team-d-img">
         <img src="" alt={name} />
       </div>
@@ -18,7 +28,6 @@ export const TeamData = ({ data }) => {
           <p className="team-y">{years}</p>
         </div>
       </div>
-      
-    </div>
+    </motion.div>
   );
 };

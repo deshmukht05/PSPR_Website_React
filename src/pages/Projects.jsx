@@ -6,8 +6,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { UpComingData } from "./UpComingData";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export const Projects = () => {
+  const { scrollRef } = useRef(null);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -35,28 +39,45 @@ export const Projects = () => {
   if (!completedProjectsData || !Array.isArray(completedProjectsData)) {
     return (
       <div className="projects" id="projects">
-        <div className="project-heading">
+        <motion.div
+          className="project-heading"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ root: scrollRef }}
+          transition={{ duration: 0.8 }}
+        >
           <h1>Our Projects</h1>
           <span className="underline"></span>
           <p>No projects data available</p>
-        </div>
+        </motion.div>
       </div>
     );
   }
 
   return (
     <div className="projects" id="projects">
-      <div className="project-heading">
-        <h1>Our <span>Projects</span></h1>
+      <motion.div
+        className="project-heading"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ root: scrollRef }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1>
+          Our <span>Projects</span>
+        </h1>
         <span className="underline"></span>
         <p>
           Track record of successful election campaigns and upcoming strategic
           initiatives
         </p>
-      </div>
+      </motion.div>
 
       <div className="project-content">
-        <h1>Projects Completed</h1>
+        <motion.h1>
+          <h1>Projects Completed</h1>
+        </motion.h1>
+
         <div className="slider-container">
           <Slider {...settings} className="project-details">
             {completedProjectsData.map((curEle, id) => (

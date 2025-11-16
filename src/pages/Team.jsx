@@ -1,17 +1,35 @@
 import "../css/Team.css";
 import teamMemberInfo from "../api/teamMemberInfo.json";
 import { TeamData } from "./TeamData";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export const OurTeam = () => {
+  const { scrollRef } = useRef(null);
+
   return (
     <div className="team" id="team">
-      <div className="team-heading">
-        <h1>Our <span>Team</span></h1>
+      <motion.div
+        className="team-heading"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ root: scrollRef }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1>
+          Our <span>Team</span>
+        </h1>
         <span className="underline"></span>
         <p>Meet the visionary leaders driving PSPR's mission and success</p>
-      </div>
+      </motion.div>
 
-      <div className="team-m-1">
+      <motion.div
+        className="team-m-1"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ root: scrollRef }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="team-i">
           <img src="" alt="Abhipsa" />
         </div>
@@ -38,8 +56,8 @@ export const OurTeam = () => {
             </p>
           </div>
         </div>
-      </div>
-      
+      </motion.div>
+
       <div className="team-r-d">
         <ul className="team-po-1">
           {teamMemberInfo.map((curEle, id) => (

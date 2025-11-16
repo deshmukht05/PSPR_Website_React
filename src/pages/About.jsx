@@ -1,18 +1,36 @@
 import "../css/About.css";
 import aboutData from "../api/aboutData.json";
 import { AboutData } from "./AboutData";
+import { useRef } from "react"; // Added useRef import
+import { motion } from "framer-motion"; // Added motion import
 
 export const About = () => {
+  const scrollRef = useRef(null);
+
   return (
     <div className="about" id="about">
-      <div className="about-heading">
-        <h1>About <span>Us</span></h1>
+      <motion.div
+        className="about-heading"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ root: scrollRef }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1>
+          About <span>Us</span>
+        </h1>
         <span className="underline"></span>
-      </div>
+      </motion.div>
 
       <div className="about-content">
         <div className="about-box-content">
-          <div className="about-projects-done">
+          <motion.div
+            className="about-projects-done"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ root: scrollRef }}
+            transition={{ duration: 0.8 }}
+          >
             <div>
               <img src="stars.png" alt="Icon" />
             </div>
@@ -20,8 +38,15 @@ export const About = () => {
               <h1>10+</h1>
               <p>Successful Election Projects</p>
             </div>
-          </div>
-          <div className="about-projects-done">
+          </motion.div>
+
+          <motion.div
+            className="about-projects-done"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ root: scrollRef }}
+            transition={{ duration: 0.8 }}
+          >
             <div>
               <img src="competition.png" alt="Icon" />
             </div>
@@ -29,10 +54,16 @@ export const About = () => {
               <h1>8+</h1>
               <p>Years of Excellence</p>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="about-para-content">
+        <motion.div
+          className="about-para-content"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef }}
+          transition={{ duration: 0.8 }}
+        >
           <p>
             At PSPR, we empower political leaders and organizations with
             cutting-edge research and strategies to navigate complex electoral
@@ -44,13 +75,19 @@ export const About = () => {
             across continents. Our mission is to strengthen democratic processes
             through data-driven insights and ethical political engagement.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="core-values">
-        <div className="core-heading">
+        <motion.div
+          className="core-heading"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ root: scrollRef }}
+          transition={{ duration: 0.8 }}
+        >
           <h1>Our Core Values</h1>
-        </div>
+        </motion.div>
         <ul className="about-align">
           {aboutData.map((curEle) => (
             <AboutData key={aboutData.id} data={curEle} />
