@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "../css/Header.css";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
+  const handleColorChange = ({ isActive }) => {
+    return {color: isActive ? "#a6ce38" : "#444"};
+  };
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,22 +20,26 @@ export const Header = () => {
   // Close menu when clicking on links
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isMenuOpen && !event.target.closest('.components') && !event.target.closest('.mobile-toggle')) {
+      if (
+        isMenuOpen &&
+        !event.target.closest(".components") &&
+        !event.target.closest(".mobile-toggle")
+      ) {
         closeMenu();
       }
     };
 
     // Prevent body scroll when menu is open
     if (isMenuOpen) {
-      document.body.classList.add('menu-open');
+      document.body.classList.add("menu-open");
     } else {
-      document.body.classList.remove('menu-open');
+      document.body.classList.remove("menu-open");
     }
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener('click', handleClickOutside);
-      document.body.classList.remove('menu-open');
+      document.removeEventListener("click", handleClickOutside);
+      document.body.classList.remove("menu-open");
     };
   }, [isMenuOpen]);
 
@@ -38,57 +47,82 @@ export const Header = () => {
     <>
       {/* Mobile Menu Backdrop */}
       {isMenuOpen && (
-        <div 
-          className="mobile-menu-backdrop active" 
-          onClick={closeMenu}
-        />
+        <div className="mobile-menu-backdrop active" onClick={closeMenu} />
       )}
-      
+
       <nav>
         <div className="navbar-components">
           <div className="logo">
             <img src="Logo.png" alt="Logo" />
           </div>
-          
+
           {/* Mobile Menu Toggle - Now properly aligned to right */}
-          <button 
-            className="mobile-toggle" 
+          <button
+            className="mobile-toggle"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? '✕' : '☰'}
+            {isMenuOpen ? "✕" : "☰"}
           </button>
 
           {/* Navigation Links */}
-          <div className={`components ${isMenuOpen ? 'active' : ''}`}>
+          <div className={`components ${isMenuOpen ? "active" : ""}`}>
             <ul>
               <li>
-                <a href="#home" onClick={closeMenu}>Home</a>
+                <NavLink to="/" style={handleColorChange} onClick={closeMenu}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a href="#about" onClick={closeMenu}>About</a>
+                <NavLink
+                  to="/about"
+                  style={handleColorChange}
+                  onClick={closeMenu}
+                >
+                  About
+                </NavLink>
               </li>
               <li>
-                <a href="#services" onClick={closeMenu}>Service</a>
+                <NavLink
+                  to="/service"
+                  style={handleColorChange}
+                  onClick={closeMenu}
+                >
+                  Service
+                </NavLink>
               </li>
               <li>
-                <a href="#projects" onClick={closeMenu}>Projects</a>
+                <NavLink
+                  to="/projects"
+                  style={handleColorChange}
+                  onClick={closeMenu}
+                >
+                  Projects
+                </NavLink>
               </li>
               <li>
-                <a href="#team" onClick={closeMenu}>Team</a>
+                <NavLink
+                  to="/team"
+                  style={handleColorChange}
+                  onClick={closeMenu}
+                >
+                  Team
+                </NavLink>
               </li>
             </ul>
-            
+
             {/* Mobile Contact Button */}
             <div className="mobile-nav-button">
               <button>
-                <a href="#contact" onClick={closeMenu}>Contact Us</a>
+                <a href="#contact" onClick={closeMenu}>
+                  Contact Us
+                </a>
               </button>
             </div>
           </div>
         </div>
-        
+
         {/* Desktop Contact Button */}
         <div className="navbar-button">
           <button>

@@ -1,6 +1,10 @@
 import { useRef } from "react";
 import "../css/Home.css";
 import { motion } from "framer-motion";
+import { About } from "./About";
+import { Services } from "./Service";
+import { Projects } from "./Projects";
+import { Contact } from "./Contact";
 
 export const Home = () => {
   const { scrollRef } = useRef(null);
@@ -51,6 +55,11 @@ export const Home = () => {
           </button>
         </motion.div>
       </div>
+
+      <About />
+      <Services />
+      <Projects />
+      <Contact />
     </div>
   );
 };

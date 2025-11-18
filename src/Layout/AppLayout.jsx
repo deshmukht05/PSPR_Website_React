@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import { Header } from "./Header";
 import { Home } from "../pages/Home";
 import { About } from "../pages/About";
@@ -9,19 +9,28 @@ import { Contact } from "../pages/Contact";
 import { Footer } from "./Footer";
 
 const AppLayout = () => {
+const navigation = useNavigation();
+
+if(navigation.state === "loading") return <h1 className="loader">Loading.....</h1>
+
   return (
     <>
       <Header />
-      {/* <Outlet /> */}
-      <Home />
-      <About />
-      <Services />
-      <Projects />
-      <OurTeam />
-      <Contact />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
 };
 
 export default AppLayout;
+
+{
+  /* <Home />
+      <About />
+      <Services />
+      <Projects />
+      <OurTeam />
+      <Contact /> */
+}
