@@ -88,7 +88,10 @@ export const Projects = () => {
       </div>
 
       <div className="project-content">
-        <h1>Upcoming Projects</h1>
+        <h1>
+          Upcoming Projects <sup className="superscript-new">New</sup>
+        </h1>
+
         <div className="slider-container">
           <Slider {...upsettings} className="project-details">
             {upcomingProjectsData.map((curElem, id) => (

@@ -72,87 +72,102 @@
   max-width: 800px;
 }
 
-
 /* Completed Project Content Alignment */
-.p-heading .p-h{
-    font-size: 1.6rem;
-    color: #1d1f20;
-    font-weight: 600;
-    text-align: left;
+.p-heading .p-h {
+  font-size: 1.6rem;
+  color: #1d1f20;
+  font-weight: 600;
+  text-align: left;
 }
 
 .p-heading .p-y {
-    font-size: 1rem;
-    color: #444;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .p-heading .p-y .p-l {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .p-col-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
 }
 
-.p-col-1 .p-o h1{
-    font-weight: 500;
-    text-align: left;
-    font-size: 1.1rem;
-    color: #a6ce38;
+.p-col-1 .p-o h1 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #a6ce38;
 }
 
-.p-col-1 .p-o p{
-    color: #1d1f20;
+.p-col-1 .p-o p {
+  color: #1d1f20;
 }
 
-.p-col-1 .p-m h1{
-    font-weight: 500;
-    text-align: left;
-    font-size: 1.1rem;
-    color: #a6ce38;
+.p-col-1 .p-m h1 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #a6ce38;
 }
 
-.p-col-1 .p-m p{
-    color: #1d1f20;
+.p-col-1 .p-m p {
+  color: #1d1f20;
 }
 
 .p-col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
 }
 
-.p-col-2 .p-ot h1{
-    font-weight: 500;
-    text-align: left;
-    font-size: 1.1rem;
-    color: #a6ce38;
+.p-col-2 .p-ot h1 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #a6ce38;
 }
 
-.p-col-2 .p-ot p{
-    color: #1d1f20;
+.p-col-2 .p-ot p {
+  color: #1d1f20;
 }
 
-.p-col-2 .p-r h1{
-    font-weight: 500;
-    text-align: left;
-    font-size: 1.1rem;
-    color: #a6ce38;
+.p-col-2 .p-r h1 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #a6ce38;
 }
 
-.p-col-2 .p-r p{
-    color: #1d1f20;
+.p-col-2 .p-r p {
+  color: #1d1f20;
 }
 
 .project-info .p-n {
-    font-size: 0.9rem;
-    font-style: italic;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* SuperScript */
+.superscript-new {
+  /* background: linear-gradient(45deg, #ff6b6b, #ee5a24); */
+  background: linear-gradient(45deg, #a6ce38, #2e8b57, #1e6b8f);
+  /* background: linear-gradient(45deg, #ff6b6b, #2e8b57, #1e6b8f); */
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-left: 0.5rem;
+  vertical-align: super;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
