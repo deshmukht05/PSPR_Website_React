@@ -159,8 +159,8 @@
 /* SuperScript */
 .superscript-new {
   /* background: linear-gradient(45deg, #ff6b6b, #ee5a24); */
-  background: linear-gradient(45deg, #a6ce38, #2e8b57, #1e6b8f);
   /* background: linear-gradient(45deg, #ff6b6b, #2e8b57, #1e6b8f); */
+  background: linear-gradient(45deg, #a6ce38, #2e8b57, #1e6b8f);
   color: white;
   font-size: 0.7rem;
   font-weight: bold;
@@ -170,4 +170,5 @@
   vertical-align: super;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  position: absolute;
 }
